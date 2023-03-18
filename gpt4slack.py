@@ -15,7 +15,7 @@ def chat_gpt(prompt):
     completions = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
-        max_tokens=150,
+        max_tokens=500,
         n=1,
         stop=None,
         temperature=0.5,
