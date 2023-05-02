@@ -11,7 +11,7 @@ app = App()
 
 # Function to interact with ChatGPT
 def chat_gpt(prompt):
-    model_engine = "text-davinci-002"
+    model_engine = "text-davinci-003"
     completions = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
