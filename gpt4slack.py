@@ -35,5 +35,6 @@ def handle_app_mentions(body, say):
 
 # Run the Slackbot
 if __name__ == "__main__":
+    print('Running')
     handler = SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"])
     handler.start()
