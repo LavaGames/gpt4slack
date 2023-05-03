@@ -7,7 +7,7 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Initialize the Slackbot
-app = App()
+app = App(token=os.getenv("SLACK_BOT_TOKEN"))
 
 # Function to interact with ChatGPT
 def chat_gpt(prompt):
